@@ -765,7 +765,6 @@ defaults write com.operasoftware.OperaDeveloper PMPrintingExpandedStateForPrint2
 
 # Start SizeUp at login
  write com.irradiatedsoftware.SizeUp ShowPrefsOnNextStart -bool false
-=======
 defaults write com.irradiatedsoftware.SizeUp StartAtLogin -bool true
 
 # Don’t show the preferences window on next start
@@ -859,6 +858,5 @@ for app in "Activity Monitor" "Address Book" "Calendar" "Contacts" "cfprefsd" \
 	"Opera" "Safari" "SizeUp" "Spectacle" "SystemUIServer" "Terminal" \
 	"Transmission" "Twitter" "iCal"; do
 	killall "${app}" > /dev/null 2>&1
->>>>>>> 9d30bd673c72ed1cadb2720fe4fb44a8ce915a2b
 done
 echo "Done. Note that some of these changes require a logout/restart to take effect."
